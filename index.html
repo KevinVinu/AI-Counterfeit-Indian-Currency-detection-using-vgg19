@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CurrencyGuard - Detect Fake Currency</title>
+    <link rel="stylesheet" href="/static/styles.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>CurrencyGuard</h1>
+            <p class="tagline">Instantly Detect Fake Currency with AI</p>
+        </header>
+        <main>
+            <div class="upload-section">
+                <label for="imageUpload" class="upload-btn">Upload Currency Image</label>
+                <input type="file" id="imageUpload" accept="image/*" onchange="previewImage(event)">
+                <div id="imagePreview" class="image-preview"></div>
+            </div>
+            <button id="predictBtn" class="predict-btn" onclick="predictImage()" disabled>Predict Now</button>
+            <div id="result" class="result"></div>
+        </main>
+        <footer>
+            <p>© 2025 CurrencyGuard. Powered by xAI.</p>
+        </footer>
+    </div>
+    <script src="/static/script.js"></script>
+</body>
+</html>
